@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="computer-store">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="computers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="computer">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="manufacturer" type="xs:string" />
+                    <xs:element name="model" type="xs:string" />
+                    <xs:element name="processor" type="xs:string" />
+                    <xs:element name="ram" type="xs:unsignedByte" />
+                    <xs:element name="video" type="xs:string" />
+                    <xs:element name="hard-drive" type="xs:unsignedShort" />
+                    <xs:element name="price" type="xs:decimal" />
+                    <xs:element name="image" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="laptops">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="laptop">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="manufacturer" type="xs:string" />
+                    <xs:element name="model" type="xs:string" />
+                    <xs:element name="screen" type="xs:decimal" />
+                    <xs:element name="processor" type="xs:string" />
+                    <xs:element name="ram" type="xs:unsignedByte" />
+                    <xs:element name="video" type="xs:string" />
+                    <xs:element name="hard-drive" type="xs:unsignedShort" />
+                    <xs:element name="price" type="xs:decimal" />
+                    <xs:element name="image" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="parts">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="processors">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="processor">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="model" type="xs:string" />
+                          <xs:element name="manufacturer" type="xs:string" />
+                          <xs:element name="cores" type="xs:unsignedByte" />
+                          <xs:element name="clock-frequency" type="xs:decimal" />
+                          <xs:element name="cache-memory" type="xs:unsignedByte" />
+                          <xs:element name="consumption" type="xs:unsignedByte" />
+                          <xs:element name="price" type="xs:decimal" />
+                          <xs:element name="image" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ram-boards">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="ram-board">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="manufacturer" type="xs:string" />
+                          <xs:element name="model" type="xs:string" />
+                          <xs:element name="memory" type="xs:unsignedByte" />
+                          <xs:element name="frequency" type="xs:unsignedShort" />
+                          <xs:element name="type" type="xs:string" />
+                          <xs:element name="price" type="xs:decimal" />
+                          <xs:element name="image" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:unsignedShort" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="video-cards">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="video-card">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:choice maxOccurs="unbounded">
+                            <xs:element name="manufacturer" type="xs:string" />
+                            <xs:element name="model" type="xs:string" />
+                            <xs:element name="gpu_memory" type="xs:unsignedByte" />
+                            <xs:element name="bus-width" type="xs:unsignedShort" />
+                            <xs:element name="type" type="xs:string" />
+                            <xs:element maxOccurs="unbounded" name="port">
+                              <xs:complexType>
+                                <xs:attribute name="name" type="xs:string" use="required" />
+                              </xs:complexType>
+                            </xs:element>
+                            <xs:element name="ports">
+                              <xs:complexType>
+                                <xs:sequence>
+                                  <xs:element name="port" type="xs:string" />
+                                </xs:sequence>
+                              </xs:complexType>
+                            </xs:element>
+                            <xs:element name="price" type="xs:unsignedShort" />
+                            <xs:element name="image" type="xs:string" />
+                          </xs:choice>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:unsignedShort" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="hard-drives">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="hard-drive">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="manufacturer" type="xs:string" />
+                          <xs:element name="model" type="xs:string" />
+                          <xs:element name="memory" type="xs:unsignedByte" />
+                          <xs:element name="speed" type="xs:unsignedByte" />
+                          <xs:element name="size" type="xs:decimal" />
+                          <xs:element name="rpm" type="xs:unsignedShort" />
+                          <xs:element name="cache" type="xs:unsignedByte" />
+                          <xs:element name="price" type="xs:decimal" />
+                          <xs:element name="image" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="motherboards">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="motherboard">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="manufacturer" type="xs:string" />
+                          <xs:element name="model" type="xs:string" />
+                          <xs:element name="socket" type="xs:string" />
+                          <xs:element name="chipset" type="xs:string" />
+                          <xs:element maxOccurs="unbounded" name="port">
+                            <xs:complexType>
+                              <xs:attribute name="name" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="price" type="xs:string" />
+                          <xs:element name="image" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

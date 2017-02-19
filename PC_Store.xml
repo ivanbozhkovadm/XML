@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="styles.xsl" ?>
+<computer-store>
+  <computers name="Computers">
+    <computer id="XC-705">
+	  <manufacturer>Acer</manufacturer>
+	  <model> XC-705 </model>
+      <processor>Intel Pentium G3250 3.2GHz</processor>
+      <ram>4</ram>
+      <video>GeForce GT 720 </video>
+      <hard-drive>1000</hard-drive>
+	  <price>400</price>
+	  <image>ACER-705.png</image>
+    </computer>
+	
+	<computer id="S200">
+	  <manufacturer>Lenovo</manufacturer>
+	  <model> S200 TWR</model>
+      <processor>Integrated Intel Graphics </processor>
+      <ram>4</ram>
+      <video>Intel GMA 3650</video>
+      <hard-drive>500</hard-drive>
+	  <price>200</price>
+	  <image>lenovo-pc.png</image>
+    </computer>
+	
+	<computer id="K20CE-RO012D">
+	  <manufacturer>Asus</manufacturer>
+	  <model> K20CE-RO012D</model>
+      <processor> Intel Pentium Quad- Core N3700 </processor>
+      <ram>4</ram>
+      <video>Intel HD Graphics</video>
+      <hard-drive>1000</hard-drive>
+	  <price>279.5</price>
+	  <image>asus-pc.png</image>
+    </computer>
+	
+  </computers>
+
+  <laptops >
+	
+	<laptop id="141A01">
+	  <manufacturer>Prestigio</manufacturer>
+	  <model> SmartBook 141A01</model>
+      <screen>14.1</screen>
+      <processor>Intel Atom Z3735F</processor>
+      <ram>2</ram>
+      <video>Integrated </video>
+      <hard-drive> 128</hard-drive>
+	  <price>250</price>
+	  <image>prestigio-laptop.png</image>
+    </laptop>
+	
+	<laptop id="3552">
+	  <manufacturer>Dell Inspiron</manufacturer>
+	  <model> 3552</model>
+      <screen>15.6</screen>
+      <processor>Intel Celeron N3060</processor>
+      <ram>4</ram>
+      <video>Intel HD Graphics 400 </video>
+      <hard-drive> 500</hard-drive>
+	  <price>250</price>
+	  <image>dell-laptop.png</image>
+    </laptop>
+	
+	<laptop id="450">
+	  <manufacturer>HP Probook</manufacturer>
+	  <model> 450 G3</model>
+      <screen>15.6</screen>
+      <processor>Intel Core i5-6200U</processor>
+      <ram>8</ram>
+      <video>AMD Radeon R7 M340</video>
+      <hard-drive> 1000</hard-drive>
+	  <price>564.5</price>
+	  <image>hp-laptop.png</image>
+    </laptop>
+  </laptops>
+  
+  
+  <parts>
+    <processors>
+      <processor id=" G3900" >
+        <model> G3900</model>
+        <manufacturer>Intel Celeron</manufacturer>
+		<cores>2</cores>
+        <clock-frequency>2.8</clock-frequency>
+        <cache-memory>2</cache-memory>
+		<consumption>51</consumption>
+        <price>34.5</price>
+		<image>Intel-celeron-CPU.png</image>
+      </processor>
+      <processor id="4020" >
+        <model> A4 X2 4020</model>
+        <manufacturer>AMD</manufacturer>
+		<cores>2</cores>
+        <clock-frequency>3.4</clock-frequency>
+        <cache-memory>1</cache-memory>
+		<consumption>65</consumption>
+        <price>34.99</price>
+		<image>AMD-a4-CPU.png</image>
+      </processor>
+      <processor id="6350" >
+        <model> X6 FX-6350</model>
+        <manufacturer>AMD</manufacturer>
+		<cores>6</cores>
+        <clock-frequency>4.2</clock-frequency>
+        <cache-memory>8</cache-memory>
+		<consumption>125</consumption>
+        <price>150</price>
+		<image>AMD-X6-CPU.png</image>
+      </processor>
+    </processors>
+
+    <ram-boards>
+      <ram-board id="12800" >
+        <manufacturer>Geil</manufacturer>
+		<model> bulk</model>
+        <memory>2</memory>
+        <frequency>1600</frequency>
+        <type>DDR3</type>
+        <price>40</price>
+		<image>Dell-ram.png</image>
+      </ram-board>      
+	  <ram-board id="12800" >
+        <manufacturer>Team Group</manufacturer>
+		<model> Team Delta Blue</model>
+        <memory>8</memory>
+        <frequency>2400</frequency>
+        <type>DDR4</type>
+        <price>60</price>
+		<image>team-delta-ram.png</image>
+      </ram-board>     
+	  <ram-board id="12800" >
+        <manufacturer>Samsung</manufacturer>
+		<model> Team Delta Blue</model>
+        <memory>16</memory>
+        <frequency>2133</frequency>
+        <type>DDR4</type>
+        <price>120.99</price>
+		<image>samsung-ram.png</image>
+      </ram-board>
+      
+    </ram-boards>
+
+
+    <video-cards>
+      <video-card id="980" >
+        <manufacturer>NVIDIA</manufacturer>
+        <model> PNY GeForce GTX 980</model>
+        <gpu_memory >4</gpu_memory>
+        <bus-width>256</bus-width>
+        <type>GDDR5</type>
+		<port name="HDMI"/>
+		<port name="DisplayPort"/>
+        <price>500</price>
+		<image>pny-video.png</image>
+      </video-card>
+	  <video-card id="210" >
+        <manufacturer>Asus</manufacturer>
+        <model> GeForce 210</model>
+        <gpu_memory >1</gpu_memory>
+        <bus-width>64</bus-width>
+        <type>DDR3</type>
+		<port name="VGA"/>
+		<ports>
+			<port>
+				VGA
+			</port>
+		</ports>
+		<port name="HDMI"/>
+		<port name="DVI-I"/>
+        <price>35</price>
+		<image>asus-video.png</image>
+      </video-card>
+
+    </video-cards>
+
+    <hard-drives>
+      <hard-drive id="H1">
+        <manufacturer>Hitachi</manufacturer>
+		<model> Ultrastar</model>
+         <memory>2</memory>
+        <speed>6</speed>
+        <size>3.5</size>
+		<rpm>7200</rpm>
+        <cache>64</cache>
+        <price>200</price>
+		<image>h1.png</image>
+      </hard-drive>
+       <hard-drive id="T1">
+        <manufacturer>Toshiba</manufacturer>
+		<model> E300</model>
+         <memory>3</memory>
+        <speed>6</speed>
+        <size>3.5</size>
+		<rpm>5940</rpm>
+        <cache>64</cache>
+        <price>98.99</price>
+		<image>t1.png</image>
+      </hard-drive>
+    </hard-drives>
+
+    <motherboards>
+		<motherboard>
+			<manufacturer>GIGABYTE</manufacturer>
+			<model> GA-H81</model>
+			<socket>Intel LGA 1150</socket>
+			<chipset>Intel H81</chipset>
+			<port name="VGA" />
+			<port name="USB 3.0" />
+			<price>45</price>
+			<image>gygabite-motherboard.png</image>
+		</motherboard>
+		<motherboard>
+			<manufacturer>MSI</manufacturer>
+			<model> H110M PRO-D</model>
+			<socket>Intel LGA 1150</socket>
+			<chipset>Intel H110</chipset>
+			<port name="DVI-D" />
+			<port name="USB 3.1" />
+			<price>58.99</price>
+			<image>msi-motherboard.png</image>
+			
+		</motherboard>
+		<motherboard>
+			<manufacturer>ASRock</manufacturer>
+			<model> C70M1</model>
+			<socket>BGA413 +</socket>
+			<chipset>AMD A50M</chipset>
+			<port name="SATA III" />
+			<price>78 $</price>
+			<image>asrock-motherboard.png</image>
+		</motherboard>
+    </motherboards>
+  </parts>
+
+</computer-store>
